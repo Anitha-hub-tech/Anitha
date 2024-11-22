@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all attributes</title>
+    <style>
+        input[type="range"]{
+            color: blue;
+        }
+        .uri,.oops,.ngo,.ati{
+            width:470px;
+            height: 35px;
+        }
+        .button{
+            background-color: rgb(216, 6, 6);
+            height: 40px;
+            width: 180px;
+            color: aliceblue;
+            border-radius: 30%;
+            border:none;
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+        .body{
+           background-image: url("OIP.jpg");
+        }
+        .uu{
+            background-color: blueviolet;
+            height: 30px;
+            border-radius: 40px;
+            width: 100px;
+        }
+        .yu{
+            width: 500px;
+            background-color: aquamarine;
+            margin-left:350px;
+            border-radius: 40px;
+        }
+        .til{
+            width: 170px;
+        }
+        .ARE{
+            color: aliceblue;
+            margin-left: 250PX;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="ARE">REGISTRATION FORM TO DREAMERS ACADEMY</h1>
+    <form action="side.php" method="post">
+        <fieldset class="yu">
+        <fieldset>
+            <legend><h1>personal information</h1></legend>
+            Firstname:<br>
+        <input type="text" name="first" ><br>
+        Secondname:<br>
+        <input type="text " name="second" title="optional"><br>
+        your email:<br>
+        <input type="email" name="email" required></label><br>
+        Your telephone or parents'telephone number:<br>
+        <input type="tel" maxlength="10" name="telephone"><br>
+        Enter your ID index:
+        <input type="number"  name="id" class="til"><br>
+      <legend><h2>Address</h2></legend> 
+      <label for="street">Street:</label> 
+      <input type="text" id="street" name="street"> 
+      <br> 
+      <br><label for="city">City:</label>
+      <input type="text" id="city" name="city"><br>
+    </fieldset>
+      <br>
+      <fieldset>
+        <legend><h1>Application</h1></legend>
+       what benefit that we will get for your approval to join this Dreamers Academy school :<br>
+        <input type="text" class="uri" name="obenefit" autofocus><br>
+       
+        What does the community you live in seem to be:<br>
+        <input type="text" class="oops" name="community"><br>
+        How was your previous school:<br>
+        <input type="text" class="ngo" name="previous"><br>
+        What do you think you will benefit from Dreamers Academy after your approval to join:<br>
+        <input type="text" class="ati" name="ybenefit"><br>
+        How do you think you can rank this dreamers Academy's performance:<br>
+        <input type="range" min="0" max="100" name="range"><br>
+        Which extra-curricular activities have you joined :<br>
+        <input type="checkbox" name="extra">Leadership<br>
+        <input type="checkbox" name="extra"> arts <br>
+        <input type="checkbox" name="extra">entertainment<br>
+        <input type="checkbox" name="extra">sports <br>
+        you may add some files like previous reports and other important information about your studies<br>
+        <input type="file" name="upload" title="you may upload some files " class="uu"><br>
+        <br><input type="submit" name="submit" class="button"><br>
+    </fieldset>
+</fieldset>
+    </form>
+
+</body>
+</html>
